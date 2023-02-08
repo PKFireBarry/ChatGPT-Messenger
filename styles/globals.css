@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .infoText {
+        @apply p-4 bg-gray-700/50 rounded-lg max-w-[300px]
+    }
+
+    .chatRow {
+        @apply rounded-lg px-5 py-3 text-sm flex items-center justify-center space-x-2 cursor-pointer  transition-all duration-500 ease-in-out hover:bg-gray-700/70 text-gray-300
+    }
+}

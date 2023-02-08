@@ -1,12 +1,16 @@
+
+
 import SideBar from '../components/SideBar'
+
 import '../styles/globals.css'
 
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html>
       <head />
@@ -16,8 +20,6 @@ export default function RootLayout({
           <SideBar />
           </div>
           {/*Client Provider*/}
-
-
           <div className='bg-[#343541] flex-1'>{children}</div>
         </div>
       </body>

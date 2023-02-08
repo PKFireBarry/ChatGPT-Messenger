@@ -4,7 +4,7 @@ function page() {
   return (
     <div className="text-white flex flex-col items-center justify-center h-screen px-2 ">
         <h1 className="text-5xl font-bold mb-20">
-            Chat GPT 
+            ChatGPT 
         </h1>
         <div className="flex space-x-2 text-center">
             <div className="">

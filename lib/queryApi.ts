@@ -10,12 +10,13 @@ const query = async (prompt: string, model: string) => {
         presence_penalty: 0,
         n: 1,
         stream: false,
-        stop: ["\n", " Human:", " AI:"],
     }).then(res => res.data.choices.map((choice: any) => choice.text)[0])
         .catch(err => `ChatGPT Error: 
             ${err.message}`
             );
-    return res;
+    var answer = res;
+    answer.split();
+    return answer;
 };
 
 export default query;

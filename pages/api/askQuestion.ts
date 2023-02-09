@@ -2,6 +2,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { adminDb } from '../../firebaseAdmin'
 import query from '../../lib/queryApi'
+import {firestore} from 'firebase-admin'
+import admin from 'firebase-admin'
+
 
 
 type Data = {
@@ -30,13 +33,13 @@ export default async function handler(
 
     const message: Message = {
         text: response || 'Something went wrong with ChatGPT ',
-        createdAt: adminDb.firestore.Timestamp.now(),
-        user: {
-            _id: "ChatGPT",
-            name: 'ChatGPT',
-            avatar: 'https://links.papareact.com/89k',
-        },
-    }
+        createdAt: admin.firestore.Timestamp.now(),
+        id: 'ChatGPT',
+    };
 
-    res.status(200).json({ name: 'John Doe' })
+    // add message to firestore
+    console.log('message', message, chatId)
+    await adminDb.collection('chats').doc(chatId).collection('messages').add(message);
+
+    res.status(200).json({ answer: message.text })
 }

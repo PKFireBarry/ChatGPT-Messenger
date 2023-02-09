@@ -1,6 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { query } from 'firebase/firestore'
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { adminDb } from '../../firebaseAdmin'
+import query from '../../lib/queryApi'
+
 
 type Data = {
   answer: string
@@ -23,7 +25,18 @@ export default async function handler(
 
     //chatgpt query 
 
-    const response = await query(prompt, model, chatId)
-    
-  res.status(200).json({ name: 'John Doe' })
+    const response = await query(prompt, model)
+    // LATER add chatId to response to be able to pull past answers to the frontend
+
+    const message: Message = {
+        text: response || 'Something went wrong with ChatGPT ',
+        createdAt: adminDb.firestore.Timestamp.now(),
+        user: {
+            _id: "ChatGPT",
+            name: 'ChatGPT',
+            avatar: 'https://links.papareact.com/89k',
+        },
+    }
+
+    res.status(200).json({ name: 'John Doe' })
 }

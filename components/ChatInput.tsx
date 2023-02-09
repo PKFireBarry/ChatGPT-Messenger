@@ -29,7 +29,6 @@ function ChatInput({chatId}: Props ) {
     const message: Message = {
       text: input,
       createdAt: serverTimestamp(),
-      id: ""
     }
 
     await addDoc(collection(db, "chats", chatId, "messages"), message);

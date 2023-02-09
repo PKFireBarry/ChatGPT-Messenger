@@ -1,6 +1,11 @@
+type Props = {
 
+  params: {
+  id: string
+  };
+};
 
-function Chat() {
+function Chat({ params: { id } }: Props) {
   return (
     <div
       className="flex-1"

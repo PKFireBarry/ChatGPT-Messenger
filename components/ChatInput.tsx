@@ -12,7 +12,7 @@ type Props = {
 
 type Message = {
     text: string
-    createdAt: Firestore.Timestamp,p
+    createdAt: Firestore.Timestamp,
     id: string
 }
 

@@ -28,11 +28,14 @@ function SideBar() {
                     {/*model selector*/}
                     <ModelSelection />
                 </div>
+
+                <div>
                 {/*chat list*/}
                 {chats?.docs.map(chat => (
                     <ChatRow key={chat.id} id={chat.id} />
                 )
                 )}
+                </div>
                 
             </div>
         </div>

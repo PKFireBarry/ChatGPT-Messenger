@@ -18,8 +18,7 @@ export default async function handler(
         console.log(models);
 
         const modelOptions = models.map((model) => ({
-            label: model.id,
-            value: model.id,
+           value: model.id, label: model.id,
         }));
 
         res.status(200).json({ 

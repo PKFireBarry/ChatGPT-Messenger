@@ -15,7 +15,7 @@ function NewChat() {
       collection(
         db, 'chats'
         ),{
-          messages: [],
+          messages: "",
           createdAt: serverTimestamp()
         }
       )

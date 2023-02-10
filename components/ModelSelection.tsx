@@ -4,19 +4,18 @@ import useSWR from 'swr'
 import Select from 'react-select'
 
 
-const fetchModel = async () => (
-    fetch('/api/getModel').then(res => res.json())
-)
+const fetchModel = async () => fetch('/api/getModel').then(res => res.json())
+
 
 
 function ModelSelection() {
-    const { data: models, isLoading } = useSWR('model', fetchModel) //useSWR to get model
+    const { data: models, isLoading } = useSWR('models', fetchModel) //useSWR to get model
 
     const { data: model, mutate: setModel } = useSWR('model', { fallbackData: "text-davinci-003" });
 
 
   return (
-    <div>
+    <div className='mt-2 '>
         <Select 
             className='mt-2'
             isSearchable

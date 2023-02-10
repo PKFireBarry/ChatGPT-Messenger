@@ -6,7 +6,8 @@ import { addDoc, serverTimestamp, collection } from "firebase/firestore";
 import { FormEvent, useState } from "react";
 import toast from "react-hot-toast";
 import { db } from "../firebase";
-
+import useSWR from "swr";
+import ModelSelection from "./ModelSelection";
 
 type Props = {
   chatId: string;
@@ -17,7 +18,9 @@ function ChatInput({chatId}: Props ) {
   const [prompt, setPrompt] = useState("");
 
   //useSWR to get model
-  const model = "davinci";
+  const { data: model, mutate: setModel } = useSWR("model", { fallbackData: "text-davinci-003" });
+  console.log(model);
+
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

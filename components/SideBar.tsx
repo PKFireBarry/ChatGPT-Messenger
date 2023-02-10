@@ -30,7 +30,7 @@ function SideBar() {
                   href='/'>
                   <HomeIcon className='h-8 w-8 text-gray-400' />
                 </Link>
-                <a className='text-2xl font-bold text-gray-400 border border-white rounded-lg p-0' href='https://github.com/PKFireBarry'
+                <a className='text-2xl font-bold text-gray-400 border border-white rounded-lg p-0' href='https://github.com/PKFireBarry/ChatGPT-Messenger'
                   target='_blank'>Github</a>
               </div>
                 <div className='sm:inline hidden my-2'>

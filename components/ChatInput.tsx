@@ -18,7 +18,7 @@ function ChatInput({chatId}: Props ) {
   const [prompt, setPrompt] = useState("");
 
   //useSWR to get model
-  const { data: model, mutate: setModel } = useSWR("model", { fallbackData: "text-davinci-003" });
+  const { data: model} = useSWR("model", { fallbackData: "text-davinci-003" });
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

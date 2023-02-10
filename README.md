@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS Example
+# ChatGPT+ App Built with Next.js + Tailwind CSS
 
 https://chatgpt-messenger-plus.vercel.app/
 

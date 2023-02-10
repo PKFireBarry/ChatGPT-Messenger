@@ -4,7 +4,7 @@ import useSWR from 'swr'
 import Select from 'react-select'
 
 
-const fetchModel = async () => fetch('/api/getModel').then(res => res.json())
+const fetchModel = async () => fetch('/api/getModels').then(res => res.json())
 
 
 

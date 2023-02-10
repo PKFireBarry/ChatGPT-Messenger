@@ -29,14 +29,17 @@ function SideBar() {
                     <ModelSelection />
                 </div>
 
-                <div>
-                {/*chat list*/}
+                <div
+                  className='felx flex-col space-y-2 my-2'
+                >
+
                 {chats?.docs.map(chat => (
-                    <ChatRow key={chat.id} id={chat.id} />
-                )
-                )}
+                    <ChatRow 
+                      key={chat.id}
+                      id={chat.id} />))}
+                      
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -15,8 +15,9 @@ function ModelSelection() {
 
 
   return (
-    <div className='mt-2 '>
-        <h1 className='text-2xl font-bold text-center text-gray-400'>Select a model</h1>
+    <div className='mt-2 mb-4'>
+        <h1 className='text-2xl font-bold text-center my-3 text-gray-400'>Models</h1>
+
         <Select 
             className='mt-2'
             isSearchable

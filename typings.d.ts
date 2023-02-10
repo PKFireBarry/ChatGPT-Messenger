@@ -1,5 +1,5 @@
 interface Message {
-    text: string;
-    createdAt: admin.firestore.Timestamp;
-    id: string;
+  id: string;
+  text: string;
+  createdAt: admin.firestore.Timestamp;
 }

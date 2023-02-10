@@ -18,8 +18,11 @@ function Chat({chatId}: Props ) {
     ));
 
   return (
+
+    
+
     <div
-      className="flex-1"
+      className="flex-1 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400 scrollbar-thumb-black"
     >
       {
         messages?.docs.map((message) => (

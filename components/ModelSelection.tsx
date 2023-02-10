@@ -16,6 +16,7 @@ function ModelSelection() {
 
   return (
     <div className='mt-2 '>
+        <h1 className='text-2xl font-bold text-center text-gray-400'>Select a model</h1>
         <Select 
             className='mt-2'
             isSearchable
@@ -25,7 +26,7 @@ function ModelSelection() {
             defaultValue={model}
             placeholder={model}
             classNames={{
-                control: (state) => "bg-gray-700/50 text-gray-400 py-2 rounded-lg",
+                control: (state) => "text-gray-400 bg-gray-400 py-2 rounded-lg",
             }}
             onChange={(e) => setModel(e.value)}
             />

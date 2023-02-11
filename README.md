@@ -14,13 +14,13 @@ Enhance your conversational AI experience with my upgraded version of the ChatGP
 ## How to use 
 - Click "new chat" to open a new chat window
 - Optionally you can select a model from the "model list" to test youre prompts by defualt it will be set to the "text-davinci-003" model
-- Click enter or the submit green arrow to send your prompt to the openAI API 
-- A loading notification will begin and when it ends your response will be shown no the scrren 
+- After writing your message click enter or the submit green arrow to send your message to the openAI API 
+- A loading notification will begin and when it ends your response will be shown no the screen 
 
 ## Features
 - Faster Responses with the removal of the text stream feature from chats
 - The ability to change the model at anytime to give you more control over responses
-- All responses saved to a daatabase to look at past responses at anytime
+- All responses are saved to a daatabase to look at past responses at anytime
 
 ## Coming Soon
 - more control over responses by using the api params in the frontend (n,tempature,ect.)

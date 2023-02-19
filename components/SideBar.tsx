@@ -28,10 +28,10 @@ function SideBar() {
                 <Link
                   className='text-2xl font-bold text-gray-400'  
                   href='/'>
-                  <HomeIcon className='h-8 w-8 text-gray-400' />
+                  <HomeIcon className='h-10 w-10 text-gray-400 hover:text-blue-700 hover:animate-pulse' />
                 </Link>
-                <a className='text-2xl font-bold text-gray-400 border border-white rounded-lg p-0' href='https://github.com/PKFireBarry/ChatGPT-Messenger'
-                  target='_blank'>Github</a>
+                <a className='text-2xl font-bold hover:border-blue-700 hover:animate-pulse text-gray-400 border-2 outline-1 border-white rounded-full p-0' href='https://github.com/PKFireBarry/ChatGPT-Messenger'
+                  target='_blank'><p className='p-2 hover:text-blue-700 hover:animate-pulse'>Github</p></a>
               </div>
                 <div className='sm:inline hidden my-2'>
 

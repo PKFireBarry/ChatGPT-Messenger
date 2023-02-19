@@ -21,11 +21,11 @@ function ModelSelection() {
         <a
           href='https://platform.openai.com/docs/models/overview'
         >
-        <InformationCircleIcon className='h-6 w-6 text-gray-400 inline ml-2 animate-pulse hover:text-blue-600' />
+        <InformationCircleIcon className='h-6 w-6 text-blue-700 inline ml-2 animate-pulse hover:text-gray-600' />
         </a>
         </h1>
         <p className='text-center font-bold text-gray-400'>Defualt Model: <i>text-davinci-003</i></p>
-
+        <p className='text-red-400 text-center text-sm pt-1'>Choosing a model without comprehending its constraints <b className='text-base'>WILL</b> result in <b className='text-base' >Errors.</b> Read more by clicking the blue icon above.</p>
 
         <Select 
             className='mt-2'
@@ -40,7 +40,7 @@ function ModelSelection() {
             }}
             onChange={(e) => setModel(e.value)}
             />
-            
+          
     </div>
   )
 }

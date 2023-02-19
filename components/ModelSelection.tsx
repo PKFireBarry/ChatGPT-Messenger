@@ -25,7 +25,7 @@ function ModelSelection() {
         </a>
         </h1>
         <p className='text-center font-bold text-gray-400'>Defualt Model: <i>text-davinci-003</i></p>
-        <p className='text-red-400 text-center text-sm pt-1'>Choosing a model without comprehending its constraints <b className='text-base'>WILL</b> result in <b className='text-base' >Errors.</b> Read more by clicking the blue icon above.</p>
+        <p className='text-red-400 text-center text-sm pt-1'>Choosing a model without comprehending its constraints <b className='text-base'>WILL</b> result in <b className='text-base' >Errors.</b> Read more by clicking the blue icon above. </p>
 
         <Select 
             className='mt-2'

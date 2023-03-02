@@ -24,15 +24,15 @@ Enhance your conversational AI experience with my upgraded version of the ChatGP
 
 ## Packages
 
-- @heroicons/react: a library of free icons that can be used in your React projects
-- firebase and firebase-admin: packages for using Firebase, a backend platform that provides services like authentication, cloud storage, and real-time database.
-- next: a framework for building server-rendered React applications
-- openai: a package for accessing the OpenAI API
-- react and react-dom: packages for building user interfaces with React
-- react-firebase-hooks: a collection of hooks for using Firebase with React
-- react-hot-toast: a package for displaying toast notifications in React
-- react-select: a package for building customizable and accessible dropdowns and select inputs in React
-- swr: a package for data fetching in React
+- `@heroicons/react`: a library of free icons that can be used in your React projects
+- `firebase and firebase-admin`: packages for using Firebase, a backend platform that provides services like authentication, cloud storage, and real-time database.
+- `next`: a framework for building server-rendered React applications
+- `openai`: a package for accessing the OpenAI API
+- `react and react-dom`: packages for building user interfaces with React
+- `react-firebase-hooks`: a collection of hooks for using Firebase with React
+- `react-hot-toast`: a package for displaying toast notifications in React
+- `react-select`: a package for building customizable and accessible dropdowns and select inputs in React
+- `swr`: a package for data fetching in React
 
 ## Coming Soon
 - more control over responses by using the API params in the frontend (n, temperature, etc.)

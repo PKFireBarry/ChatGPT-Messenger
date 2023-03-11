@@ -22,20 +22,6 @@ Enhance your conversational AI experience with my upgraded version of the ChatGP
 - The ability to change the model at any time to give you more control over responses
 - All responses are saved to a database to look at past responses at anytime
 
-## Packages
-
--`@heroicons/react`
--`eslint":
--`eslint-config-next`
--`framer-motion`:
--`next`
--`react`
--`react-hook-form`
--`react-icons`
--`react-simple-typewriter`
--`react-social-icons`
--`tailwind-scrollbar`
--`typescript`
 
 ## Coming Soon
 - more control over responses by using the API params in the frontend (n, temperature, etc.)

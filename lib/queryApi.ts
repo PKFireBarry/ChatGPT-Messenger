@@ -6,10 +6,10 @@ const query = async (prompt: string, model: string) => {
         prompt,
         temperature: 0,
         top_p: .1,
-        max_tokens: 4000,
+        max_tokens: 4096,
         frequency_penalty: 0,
         presence_penalty: 0,
-        stream: false,
+        stream: true,
         n: 1,
 
     }).then(res => res.data.choices.map((choice: any) => choice.text)[0])

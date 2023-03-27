@@ -12,7 +12,7 @@ const fetchModel = async () => fetch('/api/getModels').then(res => res.json())
 function ModelSelection() {
     const { data: models, isLoading } = useSWR('models', fetchModel) //useSWR to get model
 
-    const { data: model, mutate: setModel } = useSWR('model', { fallbackData: "gpt-4" });
+    const { data: model, mutate: setModel } = useSWR('model', { fallbackData: "gpt-4-32k" });
 
 
   return (

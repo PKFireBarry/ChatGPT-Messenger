@@ -6,7 +6,7 @@ const query = async (prompt: string, model: string) => {
         prompt,
         temperature: 0,
         top_p: .1,
-        max_tokens: 320000,
+        max_tokens: 8192,
         frequency_penalty: 0,
         presence_penalty: 0,
         stream: true,

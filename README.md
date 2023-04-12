@@ -1,4 +1,4 @@
-[![See Video demo](https://img.youtube.com/vi/PgeLCmOTVxY/default.jpg)](https://youtu.be/PgeLCmOTVxY)
+[![See Video demo](https://img.youtube.com/vi/t96iPXnblHw/default.jpg)](https://youtu.be/t96iPXnblHw)
 
 https://chatgpt-messenger-plus.vercel.app/
 
